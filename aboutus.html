@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css" />
+
+    <title>BIOM</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="bg-white">
+      <div class="container flex justify-between items-center">
+        <div class="flex items-center">
+          <img src="assets/images/logo.svg" alt="Logo" class="w-[90] h-[87]" />
+        </div>
+        <nav class="hidden md:flex font-medium text-paragraph navbar">
+          <a href="index.html" class="">হোম</a>
+          <a href="coursepage.html" class="">কোর্সসমূহ</a>
+          <a href="#" class="">পরীক্ষাসমূহ</a>
+          <a href="#" class="">ফ্রি সার্ভিস</a>
+          <a href="#" class="">নোটিশ</a>
+          <a href="blogpage.html" class="active">ব্লগ</a>
+          <a href="#" class="">বই</a>
+        </nav>
+        <div class="relative group">
+          <button
+            class="bg-primary flex items-center gap-2 text-white md:px-8 px-4 py-3 rounded-lg box-shadow"
+          >
+            Login As
+            <svg
+              width="14"
+              height="8"
+              viewBox="0 0 14 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L7 7L13 1"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <!-- Dropdown Menu -->
+          <div
+            class="absolute right-0 mt-2 w-64 bg-white box-shadow rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10"
+          >
+            <a
+              href="#"
+              class="block px-2 py-2 text-paragraph hover:bg-gray-100 rounded-t-lg text-sm"
+            >
+              Join As Student
+            </a>
+            <a
+              href="#"
+              class="block px-2 py-2 text-paragraph hover:bg-gray-100 text-sm"
+            >
+              Join As A Marketing Trainer
+            </a>
+            <a
+              href="#"
+              class="block px-2 py-2 text-paragraph hover:bg-gray-100 rounded-b-lg text-sm"
+            >
+              Join As Marketing Member
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative text-center py-20 h-[40dvh] bg-primary overflow-hidden"
+    >
+      <div class="absolute inset-0">
+        <img
+          src="assets/images/Group 1171274990.png"
+          alt="Background"
+          class="h-full w-full object-fill"
+        />
+      </div>
+      <div
+        class="container flex justify-center items-center relative z-10 h-full"
+      >
+        <div class="max-w-[734px] w-full mx-auto">
+          <h1 class="text-3xl md:text-5xl font-bold mb-5 text-white">
+            About Us
+          </h1>
+          <p class="text-white text-base md:text-lg font-medium">
+            From preschool to pre-tertiary, our students enjoy fun, interactive
+            and relevant lessons and are empowered to think beyond the confines
+            of the classroom.
+          </p>
+          <button
+            class="text-white border border-white px-10 py-3 rounded-lg mt-8"
+          >
+            Our Courses
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO WE ARE -->
+    <section class="py-10">
+      <div class="container flex items-center justify-center gap-4">
+        <img
+          src="assets/images/Union.png"
+          alt="Background"
+          class="max-w-[650px] w-full h-full"
+        />
+        <div class="max-w-[605px] w-full space-y-4 p-4">
+          <h2 class="text-3xl font-bold mb-5">Who We Are</h2>
+          <p class="text-paragraph text-base">
+            BCS Preparation or Other JOB preparation or any sort of Competitive
+            Exam facing is not an easier task now a days. Hundreds and thousands
+            of brilliant Candidates are now fighting to achieve their goals with
+            one another.
+          </p>
+          <p class="text-paragraph text-base">
+            "Biddabari App" is such a different and unique online platform where
+            you can rely yourself. You just keep your faith on Biddabari,
+            believe it, it will do the rest. Biddabari App will give you all you
+            need to be successful. Through Biddabari's selective books, notes,
+            assignments, quality lecture class, Live classes with all respected
+            experienced teachers along with Biddabari's BCS Cadre Mentor's
+            special tips will surely fulfil your desire.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why BIOM ? -->
+
+    <section
+      class="backgroundimage"
+      style="background-image: url('assets/images/Frame\ 2608763.png')"
+    >
+      <div class="container flex items-center justify-center gap-4">
+        <img
+          src="assets/images/Rectangle 597.png"
+          alt="Background"
+          class="max-w-[650px] w-full h-full"
+        />
+        <div class="max-w-[605px] w-full space-y-4 p-4 text-white">
+          <h2 class="text-3xl font-bold mb-5">Why BIOM ?</h2>
+          <p class="text-base">
+            BCS Preparation or Other JOB preparation or any sort of Competitive
+            Exam facing is not an easier task now a days. Hundreds and thousands
+            of brilliant Candidates are now fighting to achieve their goals with
+            one another. "Biddabari App" is such a different and unique online
+            platformBCS Preparation or Other JOB preparation or any sort of
+            Competitive Exam facing is not an easier task now a days. Hundreds
+            and thousands of brilliant Candidates are now fighting to achieve
+            their goals with one another. "Biddabari App" is such a different
+            and unique online platform
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Goals -->
+    <section class="py-10">
+      <div class="container">
+        <div class="lg:mr-60 md:mr-40 mr-0">
+          <h2 class="text-3xl font-bold mb-5">Our Goals</h2>
+          <p class="text-paragraph text-base">
+            At SkillBridge, our goal is to empower individuals from all
+            backgrounds to thrive in the world of design and development. We
+            believe that education should be accessible and transformative,
+            enabling learners to pursue their passions and make a meaningful
+            impact. Through our carefully crafted courses, we aim to
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
+          <div class="lg:p-10 p-5 space-y-4 bg-white rounded-lg box-shadow">
+            <svg
+              width="66"
+              height="67"
+              viewBox="0 0 66 67"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="1.04797"
+                width="65"
+                height="65"
+                rx="7.5"
+                fill="#265FEF"
+                fill-opacity="0.06"
+              />
+              <rect
+                x="0.5"
+                y="1.04797"
+                width="65"
+                height="65"
+                rx="7.5"
+                stroke="#72B3F0"
+              />
+              <path
+                d="M28.9399 50.373H37.0579C41.6816 50.373 43.9669 47.9993 43.927 43.252C43.8738 37.8303 43.8473 33.8921 43.7144 30.9385C43.3292 22.2529 40.9243 19.7039 33.0056 19.7039C25.0868 19.7039 22.6687 22.2529 22.2834 30.9385C22.1505 33.8921 22.124 37.8303 22.0708 43.252C22.031 47.9993 24.3162 50.373 28.9399 50.373ZM28.5546 45.0188C27.412 45.0188 26.6812 44.2635 26.6812 43.1307V36.1714C26.6812 35.025 27.412 34.2697 28.5546 34.2697H37.4565C38.5859 34.2697 39.3166 35.025 39.3166 36.1714V43.1307C39.3166 44.2635 38.5859 45.0188 37.4565 45.0188H28.5546ZM26.6812 39.4622H39.3166V37.8572H26.6812V39.4622ZM33.0056 16.548C30.4546 16.548 28.6609 18.3013 28.6609 20.6884H30.5343C30.5343 19.3802 31.544 18.4496 33.0056 18.4496C34.4537 18.4496 35.4769 19.3802 35.4769 20.6884H37.3502C37.3502 18.3013 35.5433 16.548 33.0056 16.548Z"
+                fill="#72B3F0"
+              />
+            </svg>
+            <h5 class="text-lg font-semibold mt-4">Provide Practical Skills</h5>
+            <p class="text-paragraph text-base">
+              We focus on delivering practical skills that are relevant to the
+              current industry demands. Our courses are designed to equip
+              learners with the knowledge and tools needed to excel in their
+              chosen field.
+            </p>
+          </div>
+          <div class="lg:p-10 p-5 space-y-4 bg-white rounded-lg box-shadow">
+            <svg
+              width="67"
+              height="67"
+              viewBox="0 0 67 67"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="1"
+                y="1.04797"
+                width="65"
+                height="65"
+                rx="7.5"
+                fill="#265FEF"
+                fill-opacity="0.06"
+              />
+              <rect
+                x="1"
+                y="1.04797"
+                width="65"
+                height="65"
+                rx="7.5"
+                stroke="#72B3F0"
+              />
+              <path
+                d="M25.7241 48.257H44.1517C44.7779 48.257 45.2901 47.7589 45.2901 47.1186C45.2901 46.6205 44.9487 46.1793 44.4933 46.0228C42.7003 45.3114 42.3303 42.9918 44.0949 41.2132C44.6356 40.6724 45.2901 39.9752 45.2901 38.5522V22.2305C45.2901 19.2706 43.8245 17.7623 40.8789 17.7623H25.7667C22.8211 17.7623 21.3555 19.2564 21.3555 22.2305V43.8599C21.3555 46.7912 22.8354 48.257 25.7241 48.257ZM25.8521 45.966C24.4149 45.966 23.6465 45.1976 23.6465 43.8457C23.6465 42.565 24.5572 41.7397 25.9802 41.7397H40.58C40.7651 41.7397 40.9358 41.7255 41.0781 41.6969C40.4093 43.1769 40.5232 44.7422 41.2773 45.966H25.8521ZM25.4252 39.5767C24.9841 39.5767 24.6141 39.2068 24.6141 38.7514V20.779C24.6141 20.3237 24.9841 19.9679 25.4252 19.9679C25.8663 19.9679 26.2506 20.3237 26.2506 20.779V38.7514C26.2506 39.2068 25.8663 39.5767 25.4252 39.5767Z"
+                fill="#72B3F0"
+              />
+            </svg>
+
+            <h5 class="text-lg font-semibold mt-4">
+              Foster Creative Problem-Solving
+            </h5>
+            <p class="text-paragraph text-base">
+              We encourage creative thinking and problem-solving abilities,
+              allowing our students to tackle real-world challenges with
+              confidence and innovation.
+            </p>
+          </div>
+          <div class="lg:p-10 p-5 space-y-4 bg-white rounded-lg box-shadow">
+            <svg
+              width="66"
+              height="67"
+              viewBox="0 0 66 67"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="1.04797"
+                width="65"
+                height="65"
+                rx="7.5"
+                fill="#265FEF"
+                fill-opacity="0.06"
+              />
+              <rect
+                x="0.5"
+                y="1.04797"
+                width="65"
+                height="65"
+                rx="7.5"
+                stroke="#72B3F0"
+              />
+              <path
+                d="M16 34.1372C16 36.5771 17.6906 37.9166 19.5925 37.9166C20.3909 37.9166 20.9896 37.6893 21.7058 37.2349C22.375 36.8163 22.8564 37.0674 22.8564 37.6535V42.0788C22.8564 44.435 24.0773 45.643 26.4136 45.643H29.5483C30.1118 45.643 30.3584 45.1645 29.9593 44.4828C29.5014 43.7532 29.2783 43.1433 29.2783 42.33C29.2783 40.3924 30.6049 38.6701 33 38.6701C35.3951 38.6701 36.71 40.3924 36.71 42.33C36.71 43.1433 36.4869 43.7532 36.0407 44.4828C35.6416 45.1645 35.8763 45.643 36.4517 45.643H39.5864C41.9227 45.643 43.1437 44.435 43.1437 42.0788V37.6535C43.1437 37.0674 43.625 36.8163 44.2825 37.2349C45.0103 37.6893 45.6091 37.9166 46.3957 37.9166C48.3094 37.9166 50 36.5771 50 34.1372C50 31.6853 48.3094 30.3457 46.3957 30.3457C45.6091 30.3457 45.0103 30.573 44.2825 31.0275C43.625 31.4461 43.1437 31.1949 43.1437 30.6089V26.1836C43.1437 23.8393 41.9227 22.6194 39.5864 22.6194H36.4517C35.8763 22.6194 35.6416 23.1098 36.0407 23.7915C36.4869 24.5211 36.71 25.1311 36.71 25.9444C36.71 27.8819 35.3951 29.6042 33 29.6042C30.6049 29.6042 29.2783 27.8819 29.2783 25.9444C29.2783 25.1311 29.5014 24.5211 29.9593 23.7915C30.3584 23.1098 30.1118 22.6194 29.5483 22.6194H26.4136C24.0773 22.6194 22.8564 23.8393 22.8564 26.1836V30.6089C22.8564 31.1949 22.375 31.4461 21.7058 31.0275C20.9896 30.573 20.3909 30.3457 19.5925 30.3457C17.6906 30.3457 16 31.6853 16 34.1372Z"
+                fill="#72B3F0"
+              />
+            </svg>
+
+            <h5 class="text-lg font-semibold mt-4">
+              Promote Collaboration and Community
+            </h5>
+            <p class="text-paragraph text-base">
+              We believe in the power of collaboration and peer learning. Our
+              platform fosters a supportive and inclusive community where
+              learners can connect, share insights, and grow together.
+            </p>
+          </div>
+          <div class="lg:p-10 p-5 space-y-4 bg-white rounded-lg box-shadow">
+            <svg
+              width="66"
+              height="67"
+              viewBox="0 0 66 67"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="1.04797"
+                width="65"
+                height="65"
+                rx="7.5"
+                fill="#265FEF"
+                fill-opacity="0.06"
+              />
+              <rect
+                x="0.5"
+                y="1.04797"
+                width="65"
+                height="65"
+                rx="7.5"
+                stroke="#72B3F0"
+              />
+              <path
+                d="M43.7626 46.5493C44.4029 46.5493 44.9294 46.0371 44.9294 45.4109C44.9294 44.7706 44.4029 44.2441 43.7626 44.2441H42.0265V34.8097C42.0265 29.6158 38.0279 25.6029 32.834 25.6029C27.6543 25.6029 23.6557 29.6158 23.6557 34.8097V44.2441H21.8912C21.2651 44.2441 20.767 44.7706 20.767 45.4109C20.767 46.0371 21.2651 46.5493 21.8912 46.5493H43.7626ZM34.0293 34.8524V44.2441H31.6671V34.8524C31.6671 34.1979 32.1794 33.657 32.834 33.657C33.4885 33.657 34.0293 34.1979 34.0293 34.8524ZM19.9417 35.8342C20.6105 35.8342 21.1939 35.2793 21.1939 34.6247C21.1939 33.9416 20.6105 33.3867 19.9417 33.3867H17.2095C16.555 33.3867 16 33.9558 16 34.6247C16 35.2651 16.555 35.8342 17.2095 35.8342H19.9417ZM22.8588 26.3713C23.3284 26.8409 24.1111 26.8552 24.5806 26.3713C25.0644 25.8875 25.0502 25.1191 24.5806 24.6495L22.6596 22.7143C22.2042 22.2304 21.4074 22.2304 20.9236 22.7143C20.454 23.1981 20.454 23.9523 20.9236 24.4361L22.8588 26.3713ZM31.6102 21.7324C31.6102 22.4012 32.1652 22.9704 32.834 22.9704C33.517 22.9704 34.072 22.4012 34.072 21.7324V19.0003C34.072 18.3314 33.5028 17.7623 32.834 17.7623C32.1652 17.7623 31.6102 18.3314 31.6102 19.0003V21.7324ZM41.0731 24.6495C40.6035 25.1191 40.5893 25.8875 41.0731 26.3713C41.5712 26.8552 42.3253 26.8409 42.7949 26.3713L44.7444 24.4361C45.214 23.9523 45.214 23.1981 44.7444 22.7143C44.2463 22.2304 43.4922 22.2304 43.0226 22.7143L41.0731 24.6495ZM48.4443 35.8342C49.113 35.8342 49.6822 35.2651 49.6822 34.6247C49.6822 33.9558 49.113 33.3867 48.4443 33.3867H45.7121C45.0575 33.3867 44.4882 33.9416 44.4882 34.6247C44.4882 35.2793 45.0575 35.8342 45.7121 35.8342H48.4443Z"
+                fill="#72B3F0"
+              />
+            </svg>
+
+            <h5 class="text-lg font-semibold mt-4">Stay Ahead of the Curve</h5>
+            <p class="text-paragraph text-base">
+              The digital landscape is constantly evolving, and we strive to
+              stay at the forefront of industry trends. We regularly update our
+              course content to ensure our students receive the latest knowledge
+              and skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-primary text-white py-12">
+      <div
+        class="container mx-auto px-6 flex flex-wrap justify-between items-center gap-8"
+      >
+        <div class="max-w-[527px] w-full">
+          <div class="py-4">
+            <img
+              src="assets/images/logo.svg"
+              alt="Logo"
+              class="w-[90] h-[87] bg-white rounded-lg"
+            />
+          </div>
+          <p class="text-gray-300">
+            ইসলামী জ্ঞান অর্জনের অনলাইনভিত্তিক অনন্য একটি শিক্ষা প্রতিষ্ঠান। এতে
+            আরবীভাষা ও সাহিত্যসহ কুরআন-হাদীস-ফিকহ-আকীদা ইত্যাদি শরীয়তের বিভিন্ন
+            বিষয়ে রয়েছে পেইড ও ফ্রি কোর্সসমূহ
+          </p>
+          <div class="py-4">
+            <h4 class="text-lg font-semibold mb-4">Official Info</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white flex items-center gap-2"
+                >
+                  <svg
+                    width="20"
+                    height="18"
+                    viewBox="0 0 20 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.939 0C16.28 0 17.57 0.53 18.519 1.481C19.469 2.43 20 3.71 20 5.05V12.95C20 15.74 17.73 18 14.939 18H5.06C2.269 18 0 15.74 0 12.95V5.05C0 2.26 2.259 0 5.06 0H14.939ZM16.5299 6.54033L16.6099 6.46033C16.8489 6.17033 16.8489 5.75033 16.5989 5.46033C16.4599 5.31133 16.2689 5.22033 16.0699 5.20033C15.8599 5.18933 15.6599 5.26033 15.5089 5.40033L10.9999 9.00033C10.4199 9.48133 9.58893 9.48133 8.99993 9.00033L4.49993 5.40033C4.18893 5.17033 3.75893 5.20033 3.49993 5.47033C3.22993 5.74033 3.19993 6.17033 3.42893 6.47033L3.55993 6.60033L8.10993 10.1503C8.66993 10.5903 9.34893 10.8303 10.0599 10.8303C10.7689 10.8303 11.4599 10.5903 12.0189 10.1503L16.5299 6.54033Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  info@salmondevelopersbd.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white flex items-center gap-2"
+                >
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.00845931 8.69455C0.00845931 8.07591 0.015909 7.45726 0.0233933 6.83575L0.0233934 6.83574C0.0271878 6.52065 0.030991 6.20482 0.0338368 5.88788C0.0338368 2.48258 2.16556 -0.000244141 5.10936 -0.000244141H8.89063C11.8344 -0.000244141 13.9662 2.48258 13.9662 5.88788C13.9915 7.25196 14 8.61605 14 9.98994C14 11.3638 13.9915 12.7475 13.9662 14.1116C13.9662 17.5169 11.8344 19.9998 8.89063 19.9998H5.10936C2.16556 19.9998 0.0338368 17.5169 0.0338368 14.1018C0.0169184 12.8162 0 11.5012 0 10.1666L0.00845931 8.69455ZM8.2807 17.6398V17.7998C8.2807 18.4734 7.7175 18.9998 7.0007 18.9998C6.30097 18.9998 5.7207 18.4734 5.7207 17.7998V17.6398C5.7207 16.9838 6.30097 16.4398 7.0007 16.4398C7.7175 16.4398 8.2807 16.9838 8.2807 17.6398ZM2.01671 6.44316C2.01136 6.84714 2.00604 7.24926 2.00604 7.65137L2 8.6082C2 9.47571 2.01208 10.3305 2.02417 11.1661C2.02417 13.3859 3.54683 14.9998 5.64955 14.9998H8.35045C10.4532 14.9998 11.9758 13.3859 11.9758 11.1725C11.994 10.2858 12 9.38641 12 8.49338C12 7.60034 11.994 6.71369 11.9758 5.82704C11.9758 3.61359 10.4532 1.99976 8.35045 1.99976H5.64955C3.54683 1.99976 2.02417 3.61359 2.02417 5.82704C2.02214 6.03305 2.01942 6.23834 2.01671 6.44316Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  +880 1711 57 47 53
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white flex items-center gap-2"
+                >
+                  <svg
+                    width="18"
+                    height="20"
+                    viewBox="0 0 18 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.03 1.99535e-05C11.29 0.01002 13.45 0.91002 15.03 2.49002C16.62 4.08002 17.51 6.23002 17.5 8.46002V8.51002C17.44 11.54 15.74 14.33 13.62 16.51C12.42 17.74 11.09 18.83 9.64 19.75C9.25 20.08 8.68 20.08 8.29 19.75C6.14 18.35 4.24 16.59 2.7 14.54C1.35 12.76 0.58 10.62 0.5 8.39002C0.52 3.74002 4.34 -0.00998005 9.03 1.99535e-05ZM9.02984 11.2597C9.73984 11.2597 10.4198 10.9897 10.9198 10.4997C11.4398 9.98967 11.7308 9.31067 11.7308 8.59967C11.7308 7.11967 10.5198 5.92967 9.02984 5.92967C7.53984 5.92967 6.33984 7.11967 6.33984 8.59967C6.33984 10.0607 7.51984 11.2397 8.99984 11.2597H9.02984Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                   Flat #B1, House#133, Road#4, Block#A, Banani, Dhaka,
+                  Bangladesh
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="max-w-[148px] w-full">
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-3 list-disc">
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white">About</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white"
+                >Our Services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white"
+                >Meet the Team</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="max-w-[148px] w-full">
+          <h4 class="text-lg font-semibold mb-4">Explore</h4>
+          <ul class="space-y-3 list-disc">
+            <li><a href="#" class="text-gray-300 hover:text-white">FAQs</a></li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white"
+                >Terms & Conditions</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="max-w-[261px] w-full">
+          <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+          <p class="text-gray-300 mb-4 text-xs">
+            Sign up now for weekly news & updates.
+          </p>
+          <label
+            for="email"
+            class="flex justify-between items-center border p-1 rounded-lg"
+          >
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              class="bg-transparent w-full text-white placeholder-gray-300 focus:outline-none focus:border-primary"
+            />
+            <button
+              class="w-8 h-8 rounded bg-[#265FEF] grid justify-center items-center"
+            >
+              <svg
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 13L7 7L1 1"
+                  stroke="#FFFAF4"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </label>
+          <div class="flex flex-wrap gap-4 py-4">
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="25" cy="25" r="24.5" stroke="white" />
+              <path
+                d="M35.7385 12H15.2615C14.0125 12 13 13.0125 13 14.2615V34.7385C13 35.9875 14.0125 37 15.2615 37H35.7385C36.9875 37 38 35.9875 38 34.7385V14.2615C38 13.0125 36.9875 12 35.7385 12ZM20.7361 33.5866C20.7361 33.9501 20.4414 34.2448 20.0779 34.2448H17.2765C16.913 34.2448 16.6184 33.9501 16.6184 33.5866V21.8431C16.6184 21.4796 16.913 21.185 17.2765 21.185H20.0779C20.4414 21.185 20.7361 21.4796 20.7361 21.8431V33.5866ZM18.6772 20.078C17.2074 20.078 16.0158 18.8865 16.0158 17.4166C16.0158 15.9468 17.2074 14.7552 18.6772 14.7552C20.1471 14.7552 21.3386 15.9468 21.3386 17.4166C21.3386 18.8865 20.1471 20.078 18.6772 20.078ZM35.3763 33.6397C35.3763 33.9738 35.1054 34.2448 34.7712 34.2448H31.7651C31.4309 34.2448 31.1599 33.9738 31.1599 33.6397V28.1313C31.1599 27.3096 31.401 24.5304 29.0125 24.5304C27.1598 24.5304 26.784 26.4327 26.7086 27.2863V33.6397C26.7086 33.9738 26.4377 34.2448 26.1035 34.2448H23.196C22.8618 34.2448 22.5909 33.9738 22.5909 33.6397V21.7901C22.5909 21.456 22.8618 21.185 23.196 21.185H26.1035C26.4376 21.185 26.7086 21.456 26.7086 21.7901V22.8147C27.3955 21.7837 28.4165 20.988 30.5902 20.988C35.4039 20.988 35.3763 25.4851 35.3763 27.956V33.6397Z"
+                fill="white"
+              />
+            </svg>
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M34.631 12H16.3688C14.5083 12 13 13.5082 13 15.3688V33.6311C13 35.4916 14.5082 36.9999 16.3688 36.9999H25.3756L25.391 28.0663H23.07C22.7684 28.0663 22.5236 27.8224 22.5224 27.5208L22.5113 24.6411C22.5101 24.3378 22.7557 24.0914 23.0589 24.0914H25.3757V21.3089C25.3757 18.0798 27.3478 16.3216 30.2283 16.3216H32.592C32.8944 16.3216 33.1397 16.5667 33.1397 16.8692V19.2974C33.1397 19.5997 32.8946 19.8448 32.5923 19.845L31.1417 19.8457C29.5752 19.8457 29.2719 20.5901 29.2719 21.6825V24.0914H32.7141C33.0421 24.0914 33.2965 24.3778 33.2579 24.7035L32.9166 27.5832C32.8839 27.8588 32.6502 28.0664 32.3728 28.0664H29.2872L29.2719 37H34.6311C36.4916 37 37.9998 35.4918 37.9998 33.6313V15.3688C37.9998 13.5082 36.4915 12 34.631 12Z"
+                fill="white"
+              />
+              <circle cx="25" cy="25" r="24.5" stroke="white" />
+            </svg>
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="25" cy="25" r="24.5" stroke="white" />
+              <path
+                d="M37.6024 17.4191C37.0469 17.6655 36.4703 17.8598 35.8787 18.0005C36.5306 17.3809 37.0208 16.606 37.2973 15.7411C37.3763 15.4942 37.1081 15.2807 36.8851 15.4129C36.062 15.9011 35.1754 16.2674 34.2498 16.5016C34.1961 16.5152 34.1407 16.5221 34.0851 16.5221C33.9165 16.5221 33.7526 16.4595 33.6237 16.3459C32.639 15.478 31.3724 15 30.0575 15C29.4885 15 28.914 15.0887 28.35 15.2636C26.6023 15.8057 25.2539 17.2473 24.8308 19.0259C24.6721 19.693 24.6291 20.3607 24.703 21.0105C24.7115 21.0851 24.6762 21.1373 24.6544 21.1617C24.6162 21.2045 24.562 21.2291 24.5058 21.2291C24.4995 21.2291 24.493 21.2288 24.4866 21.2282C20.6611 20.8728 17.2114 19.0298 14.773 16.0387C14.6487 15.8861 14.4102 15.9048 14.3111 16.0748C13.8336 16.894 13.5813 17.831 13.5813 18.7844C13.5813 20.2456 14.1683 21.6226 15.188 22.6264C14.7592 22.5247 14.3442 22.3646 13.9586 22.1505C13.7721 22.0468 13.5426 22.18 13.54 22.3934C13.5133 24.564 14.7842 26.4955 16.688 27.3652C16.6496 27.3661 16.6113 27.3665 16.5729 27.3665C16.2711 27.3665 15.9656 27.3374 15.6648 27.2799C15.4548 27.2398 15.2783 27.4391 15.3435 27.6427C15.9615 29.5719 17.6226 30.994 19.6103 31.3168C17.9606 32.4243 16.0394 33.0084 14.0399 33.0084L13.4165 33.0081C13.2245 33.0081 13.062 33.1333 13.0131 33.3193C12.9649 33.5025 13.0537 33.6958 13.2175 33.7911C15.4706 35.1023 18.0407 35.7954 20.6509 35.7954C22.9357 35.7954 25.073 35.3419 27.0033 34.4478C28.773 33.628 30.3368 32.4562 31.6513 30.9649C32.8758 29.5757 33.8334 27.9719 34.4973 26.1983C35.1302 24.5077 35.4647 22.7037 35.4647 20.9815V20.8994C35.4646 20.6229 35.5897 20.3627 35.8079 20.1855C36.6359 19.5132 37.357 18.7218 37.951 17.8333C38.1078 17.5987 37.8605 17.3047 37.6024 17.4191Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8 text-gray-400 text-sm">
+        &copy; 2025 BIOM. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!---->
+    <script src="js/index.js"></script>
+  </body>
+</html>
