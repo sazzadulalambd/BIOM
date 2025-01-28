@@ -99,3 +99,7 @@ body {
   z-index: 1;
   color: white;
 }
+
+.otp-input:focus {
+  box-shadow: 0 0 5px var(--primary);
+}
