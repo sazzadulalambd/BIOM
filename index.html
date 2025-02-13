@@ -165,8 +165,11 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
     </div>
    <div class="w-full h-full">
     <div class="max-w-[660px] h-full m-auto w-full">
+      <h2 class="text-heading text-2xl font-semibold py-10 text-center">
+        Registert
+      </h2>
       <!-- Step Indicator -->
-      <div class="flex items-center justify-between pb-4">
+      <!-- <div class="flex items-center justify-between pb-4">
         <div class="flex flex-col items-center space-y-2" id="backButton" >
           <div class="rounded-full bg-primary text-white w-8 h-8 flex justify-center items-center font-semibold">1</div>
           <p class="font-medium text-primary">Basic Information</p>
@@ -176,12 +179,26 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
           <div class="rounded-full bg-gray-300 text-white w-8 h-8 flex justify-center items-center font-semibold">2</div>
           <p class="font-medium text-paragraph">Personal Information</p>
         </div>
-      </div>
+      </div> -->
     
       <!-- Step 1: Basic Information -->
       <div id="basicInfoSection" class="mt-6">
         <form>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="mb-4 space-y-2">
+              <label for="name" class="block text-sm font-medium">Name</label>
+              <input type="text" id="name" name="age" class="w-full border rounded-lg p-2" placeholder="Esther Howard">
+            </div>
+    
+            <div class="mb-4 space-y-2">
+              <label for="mobile_number" class="block text-sm font-medium">Mobile Number*</label>
+              <input type="number" id="mobile_number" name="mobile_number" class="w-full border rounded-lg p-2" placeholder="Esther Howard">
+            </div>
+            <div class="mb-4 space-y-2">
+              <label for="password" class="block text-sm font-medium">Mobile Number*</label>
+              <input type="password" id="password" name="password" class="w-full border rounded-lg p-2" placeholder="Esther Howard">
+            </div>
+            
             <div class="mb-4 space-y-2">
               <label for="course" class="block text-sm font-medium">Select Course</label>
               <select id="course" name="course" class="w-full border rounded-lg p-2">
@@ -196,13 +213,13 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
               </select>
             </div>
     
-            <div class="mb-4 space-y-2">
+            <!-- <div class="mb-4 space-y-2">
               <label for="batch" class="block text-sm font-medium">Batch*</label>
               <select id="batch" name="batch" class="w-full border rounded-lg p-2">
                 <option>Esther Howard</option>
               </select>
             </div>
-    
+     -->
             <div class="mb-4 space-y-2">
               <label for="gender" class="block text-sm font-medium">Gender*</label>
               <select id="gender" name="gender" class="w-full border rounded-lg p-2">
@@ -210,15 +227,40 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
               </select>
             </div>
     
-            <div class="mb-4 space-y-2">
-              <label for="age" class="block text-sm font-medium">Age</label>
-              <input type="text" id="age" name="age" class="w-full border rounded-lg p-2" placeholder="Esther Howard">
-            </div>
-    
-            <div class="mb-4 space-y-2">
-              <label for="email" class="block text-sm font-medium">Email*</label>
-              <input type="email" id="email" name="email" class="w-full border rounded-lg p-2" placeholder="Esther Howard">
-            </div>
+            
+          </div>
+          <div class=" space-y-2">
+            <button
+                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
+                >
+                Batch 01
+                </button>
+                <button
+                class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
+              >
+              Batch 02
+              </button>
+              <button
+              class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
+            >
+            Batch 03
+            </button>
+            <button
+            class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
+          >
+          Batch 04
+          </button>
+          <button
+          class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
+        >
+        Batch 05
+        </button>
+        <button
+        class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
+      >
+      Batch 06
+      </button>
+  
           </div>
           <div class="mt-6 max-w-[432px] m-auto w-full">
             <button type="button" id="nextButton"  class="w-full bg-primary text-white py-2 px-4 rounded-md">Next</button>
@@ -230,7 +272,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
     
       <!-- Step 2: Personal Information -->
       <div id="personalInfoSection" class="mt-6 hidden">
-        <form>
+        <div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="mb-4 space-y-2">
               <label for="address" class="block text-sm font-medium">Address</label>
@@ -259,7 +301,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
             </button>
             <p class="text-center text-sm mt-4">Already have an account? <a href="#" class="text-primary" onclick="openLoginModal()">Login</a></p>
           </div>
-        </form>
+        </div>
       </div>
     </div>
     
@@ -866,7 +908,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
                   <p class="text-primary font-bold md:text-2xl text-sm">৳ 6000</p>
                 </div>
                 <button
-                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm text-[6px] md:h-[34px] h-[16px] hover:bg-primary hover:text-white"
+                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
                 >
                   view details
                 </button>
@@ -1023,7 +1065,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
                   <p class="text-primary font-bold md:text-2xl text-sm">৳ 6000</p>
                 </div>
                 <button
-                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm text-[6px] md:h-[34px] h-[16px] hover:bg-primary hover:text-white"
+                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
                 >
                   view details
                 </button>
@@ -1180,7 +1222,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
                   <p class="text-primary font-bold md:text-2xl text-sm">৳ 6000</p>
                 </div>
                 <button
-                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm text-[6px] md:h-[34px] h-[16px] hover:bg-primary hover:text-white"
+                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
                 >
                   view details
                 </button>
@@ -1337,7 +1379,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
                   <p class="text-primary font-bold md:text-2xl text-sm">৳ 6000</p>
                 </div>
                 <button
-                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm text-[6px] md:h-[34px] h-[16px] hover:bg-primary hover:text-white"
+                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
                 >
                   view details
                 </button>
@@ -1494,7 +1536,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
                   <p class="text-primary font-bold md:text-2xl text-sm">৳ 6000</p>
                 </div>
                 <button
-                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm text-[6px] md:h-[34px] h-[16px] hover:bg-primary hover:text-white"
+                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
                 >
                   view details
                 </button>
@@ -1651,7 +1693,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
                   <p class="text-primary font-bold md:text-2xl text-sm">৳ 6000</p>
                 </div>
                 <button
-                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm text-[6px] md:h-[34px] h-[16px] hover:bg-primary hover:text-white"
+                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
                 >
                   view details
                 </button>
@@ -1808,7 +1850,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
                   <p class="text-primary font-bold md:text-2xl text-sm">৳ 6000</p>
                 </div>
                 <button
-                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm text-[6px] md:h-[34px] h-[16px] hover:bg-primary hover:text-white"
+                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
                 >
                   view details
                 </button>
@@ -1965,7 +2007,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
                   <p class="text-primary font-bold md:text-2xl text-sm">৳ 6000</p>
                 </div>
                 <button
-                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm text-[6px] md:h-[34px] h-[16px] hover:bg-primary hover:text-white"
+                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
                 >
                   view details
                 </button>
@@ -1979,7 +2021,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
             class="border-2 flex justify-center items-center gap-2 border-primary p-0 text-primary px-4 py-1 rounded-lg font-bold md:h-[52px] h-[40px] md:w-[183px] hover:bg-primary hover:text-white"
           >
             See More
-            <!-- <svg
+            <svg
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -1998,7 +2040,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
-            </svg> -->
+            </svg>
           </button>
         </div>
       </div>
@@ -2211,7 +2253,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
                 <p class="text-primary font-bold md:text-2xl text-sm">৳ 6000</p>
               </div>
               <button
-                class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm text-[6px] md:h-[34px] h-[16px] hover:bg-primary hover:text-white"
+                class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
               >
                 view details
               </button>
@@ -2368,7 +2410,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
                 <p class="text-primary font-bold md:text-2xl text-sm">৳ 6000</p>
               </div>
               <button
-                class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm text-[6px] md:h-[34px] h-[16px] hover:bg-primary hover:text-white"
+                class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
               >
                 view details
               </button>
@@ -2525,7 +2567,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
                 <p class="text-primary font-bold md:text-2xl text-sm">৳ 6000</p>
               </div>
               <button
-                class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm text-[6px] md:h-[34px] h-[16px] hover:bg-primary hover:text-white"
+                class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
               >
                 view details
               </button>
@@ -2682,7 +2724,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
                 <p class="text-primary font-bold md:text-2xl text-sm">৳ 6000</p>
               </div>
               <button
-                class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm text-[6px] md:h-[34px] h-[16px] hover:bg-primary hover:text-white"
+                class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
               >
                 view details
               </button>
@@ -2696,7 +2738,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
             class="border-2 flex justify-center items-center gap-2 border-primary p-0 text-primary px-4 py-1 rounded-lg font-bold h-[52px] w-[183px] hover:bg-primary hover:text-white"
           >
             Explore More
-            <!-- <svg
+            <svg
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -2715,7 +2757,7 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
-            </svg> -->
+            </svg>
           </button>
         </div>
       </div>

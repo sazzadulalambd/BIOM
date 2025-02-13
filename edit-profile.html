@@ -129,7 +129,6 @@
         <!-- Form -->
         <form>
           <div class="grid grid-cols-2 gap-6">
-            <!-- User Name -->
             <div>
               <label class="block text-sm font-medium text-gray-700"
                 >User Name</label
@@ -141,7 +140,6 @@
                 class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2 bg-gray-100"
               />
             </div>
-            <!-- First Name -->
             <div>
               <label class="block text-sm font-medium text-gray-700"
                 >First Name</label
@@ -152,7 +150,6 @@
                 class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2"
               />
             </div>
-            <!-- Last Name -->
             <div>
               <label class="block text-sm font-medium text-gray-700"
                 >Last Name</label
@@ -163,7 +160,6 @@
                 class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2"
               />
             </div>
-            <!-- Mobile Number -->
             <div>
               <label class="block text-sm font-medium text-gray-700"
                 >Mobile Number</label
@@ -174,7 +170,6 @@
                 class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2 bg-gray-100"
               />
             </div>
-            <!-- WhatsApp Number -->
             <div>
               <label class="block text-sm font-medium text-gray-700"
                 >WhatsApp Number</label
@@ -185,7 +180,6 @@
                 class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2"
               />
             </div>
-            <!-- Facebook ID Link -->
             <div>
               <label class="block text-sm font-medium text-gray-700"
                 >Facebook ID Link</label
@@ -197,9 +191,149 @@
               />
             </div>
           </div>
-
-          <!-- Buttons -->
         </form>
+
+        <!-- Address Information Section -->
+        <div class="mt-10">
+          <h2 class="text-xl font-semibold text-gray-800 mb-4">
+            Address Information
+          </h2>
+          <div class="grid grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Academic Info</label
+              >
+              <select
+                class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2"
+              >
+                <option value="1">Select Academic Info</option>
+                <option value="2">SSC</option>
+                <option value="3">HSC</option>
+                <option value="4">Honours</option>
+                <option value="5">Masters</option>
+                <option value="6">PhD</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Result</label
+              >
+              <input
+                type="text"
+                placeholder="GPA 3.20"
+                class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Start Year</label
+              >
+              <input
+                type="date"
+                class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Passing Year</label
+              >
+              <input
+                type="date"
+                class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h2 class="text-xl font-semibold text-gray-800 mb-4">
+            Proffesssional Information
+          </h2>
+          <div class="grid grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Company Name</label
+              >
+              <input
+                type="text"
+                placeholder="Company Name"
+                class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2"
+              />
+              <div>
+                <input
+                  type="checkbox"
+                  id="vehicle1"
+                  name="vehicle1"
+                  value="Bike"
+                />
+                <label for="vehicle1" class="text-sm text-primary font-bold">
+                  Still working</label
+                ><br />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Jov Title</label
+              >
+              <input
+                type="text"
+                placeholder="Job Title"
+                class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Start Year</label
+              >
+              <input
+                type="date"
+                class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Passing Year</label
+              >
+              <input
+                type="date"
+                class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">
+            Select Expertise Tag
+          </h2>
+          <p class="text-primary font-semibold mb-4 text-sm">
+            Descrive your expertise
+          </p>
+          <div class="flex items-center mb-4">
+            <input
+              type="text"
+              placeholder="Describe your expertise"
+              class="flex-1 border border-gray-300 rounded-lg px-4 py-2 max-w-96"
+            />
+            <button
+              type="button"
+              class="px-4 py-2 bg-primary text-white rounded-lg text-sm"
+            >
+              Add
+            </button>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primary text-white rounded-full text-sm"
+              >Marketing</span
+            >
+            <span class="px-3 py-1 bg-primary text-white rounded-full text-sm"
+              >Development</span
+            >
+            <span class="px-3 py-1 bg-primary text-white rounded-full text-sm"
+              >Design</span
+            >
+          </div>
+        </div>
       </div>
     </section>
 

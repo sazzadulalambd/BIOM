@@ -88,7 +88,7 @@
     <!-- Hero Section -->
     <section class="relative">
       <section
-        class="relative text-center py-20 h-[40dvh] bg-primary overflow-hidden"
+        class="relative text-center h-[260px] md:h-[350px] bg-primary overflow-hidden"
       >
         <div class="absolute inset-0">
           <img
@@ -98,28 +98,32 @@
           />
         </div>
         <div
-          class="container absolute top-1/2 left-2/4 -translate-x-1/2 -translate-y-1/2"
+          class="container absolute top-24 md:top-40 left-2/4 -translate-x-1/2 -translate-y-1/2"
         >
           <div class="lg:max-w-[850px] p-6 text-start space-y-4">
-            <svg
-              width="83"
-              height="40"
-              viewBox="0 0 83 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="83" height="40" rx="8" fill="#72B3F0" />
-              <path
-                d="M22.08 14.88V26H20.256V21.136H15.024V26H13.2V14.88H15.024V19.648H20.256V14.88H22.08ZM31.1853 23.728H26.5293L25.7293 26H23.8253L27.8093 14.864H29.9213L33.9053 26H31.9853L31.1853 23.728ZM30.6733 22.24L28.8653 17.072L27.0413 22.24H30.6733ZM39.2695 14.88C40.4535 14.88 41.4882 15.1093 42.3735 15.568C43.2695 16.016 43.9575 16.6667 44.4375 17.52C44.9282 18.3627 45.1735 19.3493 45.1735 20.48C45.1735 21.6107 44.9282 22.592 44.4375 23.424C43.9575 24.256 43.2695 24.896 42.3735 25.344C41.4882 25.7813 40.4535 26 39.2695 26H35.6375V14.88H39.2695ZM39.2695 24.512C40.5708 24.512 41.5682 24.16 42.2615 23.456C42.9548 22.752 43.3015 21.76 43.3015 20.48C43.3015 19.1893 42.9548 18.1813 42.2615 17.456C41.5682 16.7307 40.5708 16.368 39.2695 16.368H37.4615V24.512H39.2695ZM48.8053 14.88V26H46.9813V14.88H48.8053ZM58.384 14.88V16.368H55.424V26H53.6V16.368H50.624V14.88H58.384ZM69.1113 14.88V26H67.2873V21.136H62.0553V26H60.2313V14.88H62.0553V19.648H67.2873V14.88H69.1113Z"
-                fill="white"
-              />
-            </svg>
+            <div class="md:block hidden">
+              <svg
+                width="83"
+                height="40"
+                viewBox="0 0 83 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="83" height="40" rx="8" fill="#72B3F0" />
+                <path
+                  d="M22.08 14.88V26H20.256V21.136H15.024V26H13.2V14.88H15.024V19.648H20.256V14.88H22.08ZM31.1853 23.728H26.5293L25.7293 26H23.8253L27.8093 14.864H29.9213L33.9053 26H31.9853L31.1853 23.728ZM30.6733 22.24L28.8653 17.072L27.0413 22.24H30.6733ZM39.2695 14.88C40.4535 14.88 41.4882 15.1093 42.3735 15.568C43.2695 16.016 43.9575 16.6667 44.4375 17.52C44.9282 18.3627 45.1735 19.3493 45.1735 20.48C45.1735 21.6107 44.9282 22.592 44.4375 23.424C43.9575 24.256 43.2695 24.896 42.3735 25.344C41.4882 25.7813 40.4535 26 39.2695 26H35.6375V14.88H39.2695ZM39.2695 24.512C40.5708 24.512 41.5682 24.16 42.2615 23.456C42.9548 22.752 43.3015 21.76 43.3015 20.48C43.3015 19.1893 42.9548 18.1813 42.2615 17.456C41.5682 16.7307 40.5708 16.368 39.2695 16.368H37.4615V24.512H39.2695ZM48.8053 14.88V26H46.9813V14.88H48.8053ZM58.384 14.88V16.368H55.424V26H53.6V16.368H50.624V14.88H58.384ZM69.1113 14.88V26H67.2873V21.136H62.0553V26H60.2313V14.88H62.0553V19.648H67.2873V14.88H69.1113Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
 
-            <h1 class="mt-2 lg:text-4xl text-2xl font-bold text-white">
+            <h1
+              class="mt-2 lg:text-4xl text-xl text-center md:text-start font-bold text-white"
+            >
               The Ultimate Guide To The Best Quran Learning Platform
             </h1>
             <div
-              class="mt-4 md:text-sm text-[10px] text-paragraph space-x-4 flex"
+              class="mt-4 md:text-sm text-[12px] text-paragraph space-x-4 flex flex-wrap justify-center md:justify-start gap-4"
             >
               <span class="flex items-center gap-2 font-bold text-white"
                 ><svg
@@ -211,7 +215,7 @@
       <section
         class="container font-sans flex lg:flex-row flex-col-reverse lg:py-0 py-5"
       >
-        <div class="max-w-[870px] w-full m-auto h-full px-4">
+        <div class="max-w-[870px] w-full m-auto h-full lg:px-4">
           <!-- Tabs Section -->
           <div
             class="max-w-[870px] flex justify-between sticky top-0 mt-4 bg-white z-10 rounded-se-xl rounded-ss-xl overflow-hidden"
@@ -1354,7 +1358,7 @@
         </div>
 
         <div
-          class="max-w-[427px] w-full h-full bg-white p-6 rounded lg:-mt-[20%] z-[100] my-2 sticky top-0 box-shadow"
+          class="max-w-[427px] w-full h-full bg-white p-6 rounded -mt-[100px] lg:-mt-[200px] mx-auto z-[100] my-2 md:sticky top-0 box-shadow"
         >
           <div class="flex md:flex-row flex-col items-center gap-4 relative">
             <img

@@ -111,30 +111,34 @@
     <!-- Blog Section -->
     <section class="md:py-10 py-5">
       <div class="container">
-        <div class="w-full text-start flex justify-between items-center">
+        <div
+          class="w-full text-start flex md:flex-row flex-col justify-between md:items-center gap-4"
+        >
           <h2
             class="text-heading xl:text-4xl md:text-3xl sm:text-xl text-lg font-bold"
           >
             Latest Articles
           </h2>
-          <div class="flex flex-wrap justify-start items-center gap-4">
+          <div
+            class="max-w-[540px] flex justify-start items-center gap-4 overflow-auto"
+          >
             <button
               class="px-8 h-[36px] bg-primary rounded-full text-white border border-2 border-primary"
             >
               All
             </button>
             <button
-              class="px-8 h-[36px] hover:bg-primary rounded-full hover:text-white text-primary border border-2 border-primary"
+              class="md:px-8 px-4 text-xs md:text-base md:h-[36px] h-10 w-32 md:w-40 hover:bg-primary rounded-full hover:text-white text-primary border border-2 border-primary"
             >
               Hadith
             </button>
             <button
-              class="px-8 h-[36px] hover:bg-primary rounded-full hover:text-white text-primary border border-2 border-primary"
+              class="md:px-8 px-4 text-xs md:text-base md:h-[36px] h-10 w-32 md:w-40 hover:bg-primary rounded-full hover:text-white text-primary border border-2 border-primary"
             >
               Makhraj
             </button>
             <button
-              class="px-8 h-[36px] hover:bg-primary rounded-full hover:text-white text-primary border border-2 border-primary"
+              class="md:px-8 px-4 text-xs md:text-base md:h-[36px] h-10 w-32 md:w-60 hover:bg-primary rounded-full hover:text-white text-primary border border-2 border-primary"
             >
               Arbi Haraf
             </button>
