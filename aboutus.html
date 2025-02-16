@@ -28,12 +28,12 @@
           <img src="assets/images/logo.svg" alt="Logo" class="w-[90] h-[87]" />
         </div>
         <nav class="hidden md:flex font-medium text-paragraph navbar">
-          <a href="index.html" class="">হোম</a>
+          <a href="index.html" class="active">হোম</a>
           <a href="coursepage.html" class="">কোর্সসমূহ</a>
           <a href="#" class="">পরীক্ষাসমূহ</a>
           <a href="#" class="">ফ্রি সার্ভিস</a>
           <a href="#" class="">নোটিশ</a>
-          <a href="blogpage.html" class="active">ব্লগ</a>
+          <a href="blogpage.html" class="">ব্লগ</a>
           <a href="#" class="">বই</a>
         </nav>
         <div class="relative group">
@@ -64,19 +64,22 @@
           >
             <a
               href="#"
-              class="block px-2 py-2 text-paragraph hover:bg-gray-100 rounded-t-lg text-sm"
+              onclick="openLoginModal()"
+              class="block px-2 py-2 text-primary hover:bg-gray-100 rounded-t-lg text-sm"
             >
               Join As Student
             </a>
             <a
               href="#"
-              class="block px-2 py-2 text-paragraph hover:bg-gray-100 text-sm"
+              onclick="openLoginModal()"
+              class="block px-2 py-2 text-primary hover:bg-gray-100 text-sm"
             >
               Join As A Marketing Trainer
             </a>
             <a
               href="#"
-              class="block px-2 py-2 text-paragraph hover:bg-gray-100 rounded-b-lg text-sm"
+              onclick="openLoginModal()"
+              class="block px-2 py-2 text-primary hover:bg-gray-100 rounded-b-lg text-sm"
             >
               Join As Marketing Member
             </a>
@@ -119,7 +122,9 @@
 
     <!-- WHO WE ARE -->
     <section class="py-10">
-      <div class="container flex md:flex-row flex-col items-center justify-center gap-4">
+      <div
+        class="container flex md:flex-row flex-col items-center justify-center gap-4"
+      >
         <img
           src="assets/images/Union.png"
           alt="Background"
@@ -152,7 +157,9 @@
       class="backgroundimage"
       style="background-image: url('assets/images/Frame\ 2608763.png')"
     >
-      <div class="container flex md:flex-row flex-col py-3 items-center justify-center gap-4">
+      <div
+        class="container flex md:flex-row flex-col py-3 items-center justify-center gap-4"
+      >
         <img
           src="assets/images/Rectangle 597.png"
           alt="Background"
@@ -447,7 +454,9 @@
           <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
           <ul class="space-y-3 list-disc">
             <li>
-              <a href="#" class="text-gray-300 hover:text-white">About</a>
+              <a href="aboutus.html" class="text-gray-300 hover:text-white"
+                >About</a
+              >
             </li>
             <li>
               <a href="#" class="text-gray-300 hover:text-white"
@@ -460,7 +469,9 @@
               >
             </li>
             <li>
-              <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+              <a href="contactus.html" class="text-gray-300 hover:text-white"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
