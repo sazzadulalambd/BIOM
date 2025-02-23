@@ -12,6 +12,7 @@ tailwind.config = {
   },
 };
 
+
 //slick slider
 $(document).ready(function () {
   $(".slider").slick({
@@ -158,7 +159,6 @@ function closeWithdrawModal() {
   document.getElementById("withdrawmodal").classList.remove("flex");
 }
 
-
 //  Change Trainer Modal
 
 function openChangeTrainerModal() {
@@ -170,8 +170,6 @@ function closeChangeTrainerModal() {
   document.getElementById("changetrainermodal").classList.add("hidden");
   document.getElementById("changetrainermodal").classList.remove("flex");
 }
-
-
 
 // JavaScript to handle Next button functionality
 const nextButton = document.getElementById("nextButton");
@@ -246,8 +244,6 @@ otpInputs.forEach((input, index) => {
   });
 });
 
-
-
 // dashboard dropdown menu toggle header
 function toggleMenu() {
   const menu = document.getElementById("menu");
@@ -268,3 +264,8 @@ function toggleMenu4() {
   const menu = document.getElementById("menu4");
   menu.classList.toggle("hidden");
 }
+
+
+
+
+
