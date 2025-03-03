@@ -1474,28 +1474,63 @@
         <div class="">
           <h2 class="text-lg font-semibold">Enrolled Courses & Payments</h2>
           <div
-            class="flex md:flex-row flex-col justify-between mg:items-center my-4 border-b border-gray-200 gap-3"
+            class="flex md:flex-row flex-col justify-between md:items-center my-4 border-b border-gray-200 gap-2"
           >
             <div class="flex items-center space-x-2">
               <a
-                href="marketing-trainar-dashboard.html"
-                class="border border-0 border-b-4 border-primary text-primary font-bold px-4 py-2"
-              >
-                Member
-              </a>
-              <a
-                href="marketing-trainar-payment.html"
+                href="marketing-member.html"
                 class="border border-0 border-b-4 text-paragraph font-mediam px-4 py-2"
               >
                 Payment History
               </a>
+              <a
+                href="marketing-member-students.html"
+                class="border border-0 border-b-4 border-primary text-primary font-mediam px-4 py-2"
+              >
+                Students
+              </a>
             </div>
-            <div class="flex items-center space-x-2">
+            <div class="flex flex-wrap gap-2 items-center space-x-2">
               <select class="bg-white rounded-lg p-2">
                 <option>Paid Student</option>
                 <option>Unpaid Student</option>
               </select>
+              <button
+                class="bg-[#C71720] text-white px-4 py-2 rounded-lg flex items-center gap-2"
+                onclick="openWithdrawModal()"
+              >
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.5 16.2499C1.49989 15.2796 1.73514 14.3237 2.18556 13.4642C2.63598 12.6047 3.28814 11.8673 4.08612 11.3152C4.88409 10.763 5.80407 10.4127 6.76716 10.2942C7.73025 10.1757 8.70772 10.2925 9.61575 10.6347"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.0327 12.9696C16.3315 12.6708 16.4994 12.2656 16.4994 11.8431C16.4994 11.4206 16.3315 11.0154 16.0327 10.7166C15.734 10.4178 15.3288 10.25 14.9062 10.25C14.4837 10.25 14.0785 10.4178 13.7798 10.7166L10.7723 13.7256C10.5939 13.9038 10.4634 14.1241 10.3927 14.3661L9.765 16.5186C9.74618 16.5831 9.74505 16.6516 9.76173 16.7167C9.77842 16.7818 9.8123 16.8412 9.85983 16.8888C9.90737 16.9363 9.96681 16.9702 10.0319 16.9869C10.0971 17.0036 10.1655 17.0024 10.23 16.9836L12.3825 16.3559C12.6245 16.2852 12.8448 16.1547 13.023 15.9764L16.0327 12.9696Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.5 10.25C9.57107 10.25 11.25 8.57107 11.25 6.5C11.25 4.42893 9.57107 2.75 7.5 2.75C5.42893 2.75 3.75 4.42893 3.75 6.5C3.75 8.57107 5.42893 10.25 7.5 10.25Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
 
+                Change Trainer
+              </button>
               <button
                 class="bg-primary text-white px-4 py-2 rounded-lg flex items-center gap-2"
                 onclick="openWithdrawModal()"
@@ -1526,7 +1561,6 @@
               </button>
             </div>
           </div>
-
           <div class="overflow-x-auto">
             <table
               class="w-full table-auto border-collapse border-separate border-spacing-y-2"
@@ -1744,424 +1778,60 @@
               </tbody>
             </table>
           </div>
-
-          <!-- <div class="space-y-4 md:hidden block py-3">
-          <div
-            class="grid grid-cols-3 gap-4 box-shadow bg-white p-4 rounded-lg"
-          >
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Name</p>
-              <span class="text-primary font-semibold"
-                >arobic language course</span
-              >
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Type</p>
-              <span class="text-primary font-semibold">Live</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Erolled Student</p>
-              <span class="text-primary font-semibold">14 </span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Price</p>
-              <span class="text-primary font-semibold">12,000</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Status</p>
-              <span
-                class="text-[#259800] bg-[#F0FEED] flex items-center gap-2 px-4 py-2 rounded-full"
-              >
-                <svg
-                  width="10"
-                  height="9"
-                  viewBox="0 0 10 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="4.77354"
-                    cy="4.44932"
-                    r="4.25792"
-                    fill="#259800"
-                  />
-                </svg>
-
-                Active
-              </span>
-            </label>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex justify-center items-center space-x-2">
+            <span>Show</span>
+            <select class="bg-white rounded-lg p-2">
+              <option>10</option>
+              <option>20</option>
+              <option>30</option>
+              <option>40</option>
+              <option>50</option>
+            </select>
+            <span>Row</span>
           </div>
-          <div
-            class="grid grid-cols-3 gap-4 box-shadow bg-white p-4 rounded-lg"
-          >
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Name</p>
-              <span class="text-primary font-semibold"
-                >arobic language course</span
-              >
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Type</p>
-              <span class="text-primary font-semibold">Live</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Erolled Student</p>
-              <span class="text-primary font-semibold">14 </span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Price</p>
-              <span class="text-primary font-semibold">12,000</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Status</p>
-              <span
-                class="text-[#259800] bg-[#F0FEED] flex items-center gap-2 px-4 py-2 rounded-full"
-              >
-                <svg
-                  width="10"
-                  height="9"
-                  viewBox="0 0 10 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="4.77354"
-                    cy="4.44932"
-                    r="4.25792"
-                    fill="#259800"
-                  />
-                </svg>
+          <div class="flex justify-center items-center space-x-2">
+            <!-- Previous Button -->
+            <button
+              class="px-2 py-1 bg-white text-primary hover:text-white rounded-lg hover:bg-primary border"
+              disabled
+            >
+              &lt;
+            </button>
 
-                Active
-              </span>
-            </label>
-          </div>
-          <div
-            class="grid grid-cols-3 gap-4 box-shadow bg-white p-4 rounded-lg"
-          >
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Name</p>
-              <span class="text-primary font-semibold"
-                >arobic language course</span
-              >
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Type</p>
-              <span class="text-primary font-semibold">Live</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Erolled Student</p>
-              <span class="text-primary font-semibold">14 </span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Price</p>
-              <span class="text-primary font-semibold">12,000</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Status</p>
-              <span
-                class="text-[#259800] bg-[#F0FEED] flex items-center gap-2 px-4 py-2 rounded-full"
-              >
-                <svg
-                  width="10"
-                  height="9"
-                  viewBox="0 0 10 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="4.77354"
-                    cy="4.44932"
-                    r="4.25792"
-                    fill="#259800"
-                  />
-                </svg>
+            <!-- Page Numbers -->
+            <button
+              class="px-2 py-1 text-primary hover:text-white rounded-lg hover:bg-primary border bg-primary text-white"
+            >
+              1
+            </button>
+            <button
+              class="px-2 py-1 bg-white text-primary hover:text-white rounded-lg hover:bg-primary border"
+            >
+              2
+            </button>
+            <span
+              class="px-2 py-1 bg-white text-primary hover:text-white rounded-lg hover:bg-primary border"
+              >...</span
+            >
+            <button
+              class="px-2 py-1 bg-white text-primary hover:text-white rounded-lg hover:bg-primary border"
+            >
+              4
+            </button>
+            <button
+              class="px-2 py-1 bg-white text-primary hover:text-white rounded-lg hover:bg-primary border"
+            >
+              5
+            </button>
 
-                Active
-              </span>
-            </label>
-          </div>
-          <div
-            class="grid grid-cols-3 gap-4 box-shadow bg-white p-4 rounded-lg"
-          >
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Name</p>
-              <span class="text-primary font-semibold"
-                >arobic language course</span
-              >
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Type</p>
-              <span class="text-primary font-semibold">Live</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Erolled Student</p>
-              <span class="text-primary font-semibold">14 </span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Price</p>
-              <span class="text-primary font-semibold">12,000</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Status</p>
-              <span
-                class="text-[#259800] bg-[#F0FEED] flex items-center gap-2 px-4 py-2 rounded-full"
-              >
-                <svg
-                  width="10"
-                  height="9"
-                  viewBox="0 0 10 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="4.77354"
-                    cy="4.44932"
-                    r="4.25792"
-                    fill="#259800"
-                  />
-                </svg>
-
-                Active
-              </span>
-            </label>
-          </div>
-          <div
-            class="grid grid-cols-3 gap-4 box-shadow bg-white p-4 rounded-lg"
-          >
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Name</p>
-              <span class="text-primary font-semibold"
-                >arobic language course</span
-              >
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Type</p>
-              <span class="text-primary font-semibold">Live</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Erolled Student</p>
-              <span class="text-primary font-semibold">14 </span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Price</p>
-              <span class="text-primary font-semibold">12,000</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Status</p>
-              <span
-                class="text-[#259800] bg-[#F0FEED] flex items-center gap-2 px-4 py-2 rounded-full"
-              >
-                <svg
-                  width="10"
-                  height="9"
-                  viewBox="0 0 10 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="4.77354"
-                    cy="4.44932"
-                    r="4.25792"
-                    fill="#259800"
-                  />
-                </svg>
-
-                Active
-              </span>
-            </label>
-          </div>
-          <div
-            class="grid grid-cols-3 gap-4 box-shadow bg-white p-4 rounded-lg"
-          >
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Name</p>
-              <span class="text-primary font-semibold"
-                >arobic language course</span
-              >
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Type</p>
-              <span class="text-primary font-semibold">Live</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Erolled Student</p>
-              <span class="text-primary font-semibold">14 </span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Price</p>
-              <span class="text-primary font-semibold">12,000</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Status</p>
-              <span
-                class="text-[#259800] bg-[#F0FEED] flex items-center gap-2 px-4 py-2 rounded-full"
-              >
-                <svg
-                  width="10"
-                  height="9"
-                  viewBox="0 0 10 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="4.77354"
-                    cy="4.44932"
-                    r="4.25792"
-                    fill="#259800"
-                  />
-                </svg>
-
-                Active
-              </span>
-            </label>
-          </div>
-          <div
-            class="grid grid-cols-3 gap-4 box-shadow bg-white p-4 rounded-lg"
-          >
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Name</p>
-              <span class="text-primary font-semibold"
-                >arobic language course</span
-              >
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Type</p>
-              <span class="text-primary font-semibold">Live</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Erolled Student</p>
-              <span class="text-primary font-semibold">14 </span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Price</p>
-              <span class="text-primary font-semibold">12,000</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Status</p>
-              <span
-                class="text-[#259800] bg-[#F0FEED] flex items-center gap-2 px-4 py-2 rounded-full"
-              >
-                <svg
-                  width="10"
-                  height="9"
-                  viewBox="0 0 10 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="4.77354"
-                    cy="4.44932"
-                    r="4.25792"
-                    fill="#259800"
-                  />
-                </svg>
-
-                Active
-              </span>
-            </label>
-          </div>
-          <div
-            class="grid grid-cols-3 gap-4 box-shadow bg-white p-4 rounded-lg"
-          >
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Name</p>
-              <span class="text-primary font-semibold"
-                >arobic language course</span
-              >
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Type</p>
-              <span class="text-primary font-semibold">Live</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Erolled Student</p>
-              <span class="text-primary font-semibold">14 </span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Price</p>
-              <span class="text-primary font-semibold">12,000</span>
-            </label>
-            <label class="text-xs space-y-2">
-              <p class="text-paragraph font-bold">Course Status</p>
-              <span
-                class="text-[#259800] bg-[#F0FEED] flex items-center gap-2 px-4 py-2 rounded-full"
-              >
-                <svg
-                  width="10"
-                  height="9"
-                  viewBox="0 0 10 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="4.77354"
-                    cy="4.44932"
-                    r="4.25792"
-                    fill="#259800"
-                  />
-                </svg>
-
-                Active
-              </span>
-            </label>
-          </div>
-        </div> -->
-
-          <div class="flex items-center justify-between">
-            <div class="flex justify-center items-center space-x-2">
-              <span>Show</span>
-              <select class="bg-white rounded-lg p-2">
-                <option>10</option>
-                <option>20</option>
-                <option>30</option>
-                <option>40</option>
-                <option>50</option>
-              </select>
-              <span>Row</span>
-            </div>
-            <div class="flex justify-center items-center space-x-2">
-              <!-- Previous Button -->
-              <button
-                class="px-2 py-1 bg-white text-primary hover:text-white rounded-lg hover:bg-primary border"
-                disabled
-              >
-                &lt;
-              </button>
-
-              <!-- Page Numbers -->
-              <button
-                class="px-2 py-1 text-primary hover:text-white rounded-lg hover:bg-primary border bg-primary text-white"
-              >
-                1
-              </button>
-              <button
-                class="px-2 py-1 bg-white text-primary hover:text-white rounded-lg hover:bg-primary border"
-              >
-                2
-              </button>
-              <span
-                class="px-2 py-1 bg-white text-primary hover:text-white rounded-lg hover:bg-primary border"
-                >...</span
-              >
-              <button
-                class="px-2 py-1 bg-white text-primary hover:text-white rounded-lg hover:bg-primary border"
-              >
-                4
-              </button>
-              <button
-                class="px-2 py-1 bg-white text-primary hover:text-white rounded-lg hover:bg-primary border"
-              >
-                5
-              </button>
-
-              <!-- Next Button -->
-              <button
-                class="px-2 py-1 bg-white text-primary hover:text-white rounded-lg hover:bg-primary border"
-              >
-                &gt;
-              </button>
-            </div>
+            <!-- Next Button -->
+            <button
+              class="px-2 py-1 bg-white text-primary hover:text-white rounded-lg hover:bg-primary border"
+            >
+              &gt;
+            </button>
           </div>
         </div>
       </div>

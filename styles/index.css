@@ -16,6 +16,9 @@ body {
   padding: 0 !important;
   background-color: #f7f7f8;
 }
+* {
+  list-style: none;
+}
 
 .container {
   width: var(--container) !important;
@@ -111,4 +114,11 @@ body {
 
 .otp-input:focus {
   box-shadow: 0 0 5px var(--primary);
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
