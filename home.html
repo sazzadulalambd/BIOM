@@ -52,18 +52,21 @@
     
         <!-- Login Dropdown -->
         <div class="relative group">
-          <button class="bg-primary flex items-center gap-2 text-white px-4 md:px-8 py-3 rounded-lg shadow-md">
-            Login As
+          <button class="bg-none flex items-center gap-2 text-white px-4 md:px-8 py-3">
+           <img src="assets/images/Ellipse 101.png" alt="User" class="w-10 h-10" />
             <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L7 7L13 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
     
           <!-- Dropdown Menu -->
           <div class="absolute right-0 mt-2 w-64 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-            <a href="#" onclick="openLoginModal()" class="block px-4 py-2 text-primary hover:bg-gray-100 rounded-t-lg text-sm">Join As Student</a>
-            <a href="#" onclick="openLoginModal()" class="block px-4 py-2 text-primary hover:bg-gray-100 text-sm">Join As A Marketing Trainer</a>
-            <a href="#" onclick="openLoginModal()" class="block px-4 py-2 text-primary hover:bg-gray-100 rounded-b-lg text-sm">Join As Marketing Member</a>
+            <a href="studentdashboard.html"  class="block px-4 py-2 text-primary hover:bg-gray-100 rounded-t-lg text-sm">Dashboard Student</a>
+            <a href="marketing-trainar-dashboard.html"  class="block px-4 py-2 text-primary hover:bg-gray-100 text-sm">Dashboard Trainer</a>
+            <a href="marketing-member.html" class="block px-4 py-2 text-primary hover:bg-gray-100 rounded-b-lg text-sm">Dashboard Member</a>
+            <a href="dashboard-teacher.html" class="block px-4 py-2 text-primary hover:bg-gray-100 rounded-b-lg text-sm">Dashboard Teacher</a>
+            <a href="edit-profile.html" class="block px-4 py-2 text-primary hover:bg-gray-100 rounded-b-lg text-sm">Edit Profile</a>
+            <a href="index.html" class="block px-4 py-2 text-primary hover:bg-gray-100 rounded-b-lg text-sm">Logout</a>
           </div>
         </div>
       </div>
@@ -90,330 +93,6 @@
     </header>
     
 
-    <!-- Login Modal -->
-  <div
-  id="loginmodal"
-  class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50"
->
-  <!-- Modal Content -->
-  <div class="bg-white container p-6 rounded-2xl shadow-lg relative">
-    <!-- Modal Header -->
-    <div class=" absolute top-0 right-0 p-4">
-
-      <button class="text-primary rounded-full w-10 h-10 border border-paragraph" onclick="closeLoginModal()">
-        ✕
-      </button>
-    </div>
-    <!-- Modal Body -->
-    <div class="mt-4 flex md:flex-row flex-col justify-between gap-4 items-center lg:p-6 p-2">
-      <div class=" max-w-[511px] w-full md:block hidden">
-        <img src="assets/images/Group 1171275115.png" alt="Learn" class="w-full h-full object-cover" />
-      </div>
-     <div class="w-full h-full">
-      <h2 class="text-heading text-2xl font-semibold py-10 text-center">Log In</h2>
-      <div class=" max-w-[432px] h-full m-auto w-full">
-        <form>
-          <div class="mb-4 space-y-2">
-            <label for="Mobile" class="block text-sm font-medium text-primary">Mobile</label>
-            <input type="Mobile" placeholder="Mobile" id="Mobile"  name="Mobile" class="w-full border border-paragraph rounded-lg p-2">
-          </div>
-          <div class="mb-4 space-y-2">
-            <label for="loginPassword" class="block text-sm font-medium text-primary">Password</label>
-            <input type="password" id="loginPassword" placeholder="password" name="loginPassword" class="w-full border border-paragraph rounded-lg p-2">
-          </div>
-          <div class="flex justify-between items-center pb-4">
-            <div>
-              <input type="checkbox" id="rememberMe" name="rememberMe" class="mr-2">
-            <label for="rememberMe" class="text-sm font-medium text-primary">Remember Me</label>
-            </div>
-            <a href="#" class="text-primary text-sm">Forgot Password?</a>
-
-          </div>
-          <button type="button" class="w-full bg-primary text-white py-2 px-4 rounded-md" onclick="location.href='home.html'">Login</button>
-
-        </form>
-        <p class="text-center text-sm mt-4">Don't have an account? <a href="#" class="text-primary" onclick="openSignupModal()">Sign Up</a></p>
-        </div>  
-     </div>
-
-      </div>
-    </div>
-   
-  </div>
-
-
-      <!-- signup  Modal -->
-   <div
-id="signupmodal"
-class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50"
->
-<!-- Modal Content -->
-<div class="bg-white container p-6 rounded-2xl shadow-lg relative">
-  <!-- Modal Header -->
-  <div class=" absolute top-0 right-0 p-4">
-
-    <button class="text-primary rounded-full w-10 h-10 border border-paragraph" onclick="closeSignupModal()">
-      ✕
-    </button>
-  </div>
-  <!-- Modal Body -->
-  <div class="mt-4 flex md:flex-row flex-col justify-between gap-4 items-center lg:p-6 p-2">
-    <div class=" max-w-[511px] w-full md:block hidden">
-      <img src="assets/images/Group 1171275115.png" alt="Learn" class="w-full h-full object-cover" />
-    </div>
-   <div class="w-full h-full">
-    <div class="max-w-[660px] h-full m-auto w-full">
-      <h2 class="text-heading text-2xl font-semibold py-10 text-center">
-        Registert
-      </h2>
-      <!-- Step Indicator -->
-      <!-- <div class="flex items-center justify-between pb-4">
-        <div class="flex flex-col items-center space-y-2" id="backButton" >
-          <div class="rounded-full bg-primary text-white w-8 h-8 flex justify-center items-center font-semibold">1</div>
-          <p class="font-medium text-primary">Basic Information</p>
-        </div>
-        <div class="flex-1 border-t border-paragraph"></div>
-        <div class="flex flex-col items-center space-y-2">
-          <div class="rounded-full bg-gray-300 text-white w-8 h-8 flex justify-center items-center font-semibold">2</div>
-          <p class="font-medium text-paragraph">Personal Information</p>
-        </div>
-      </div> -->
-    
-      <!-- Step 1: Basic Information -->
-      <div id="basicInfoSection" class="mt-6">
-        <form>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="mb-4 space-y-2">
-              <label for="name" class="block text-sm font-medium">Name</label>
-              <input type="text" id="name" name="age" class="w-full border rounded-lg p-2" placeholder="Esther Howard">
-            </div>
-    
-            <div class="mb-4 space-y-2">
-              <label for="mobile_number" class="block text-sm font-medium">Mobile Number*</label>
-              <input type="number" id="mobile_number" name="mobile_number" class="w-full border rounded-lg p-2" placeholder="Esther Howard">
-            </div>
-            <div class="mb-4 space-y-2">
-              <label for="password" class="block text-sm font-medium">Mobile Number*</label>
-              <input type="password" id="password" name="password" class="w-full border rounded-lg p-2" placeholder="Esther Howard">
-            </div>
-            
-            <div class="mb-4 space-y-2">
-              <label for="course" class="block text-sm font-medium">Select Course</label>
-              <select id="course" name="course" class="w-full border rounded-lg p-2">
-                <option>Esther Howard</option>
-              </select>
-            </div>
-    
-            <div class="mb-4 space-y-2">
-              <label for="teacher" class="block text-sm font-medium">Select Teacher</label>
-              <select id="teacher" name="teacher" class="w-full border rounded-lg p-2">
-                <option>Esther Howard</option>
-              </select>
-            </div>
-    
-            <!-- <div class="mb-4 space-y-2">
-              <label for="batch" class="block text-sm font-medium">Batch*</label>
-              <select id="batch" name="batch" class="w-full border rounded-lg p-2">
-                <option>Esther Howard</option>
-              </select>
-            </div>
-     -->
-            <div class="mb-4 space-y-2">
-              <label for="gender" class="block text-sm font-medium">Gender*</label>
-              <select id="gender" name="gender" class="w-full border rounded-lg p-2">
-                <option>Esther Howard</option>
-              </select>
-            </div>
-    
-            
-          </div>
-          <div class=" space-y-2">
-            <button
-                  class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
-                >
-                Batch 01
-                </button>
-                <button
-                class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
-              >
-              Batch 02
-              </button>
-              <button
-              class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
-            >
-            Batch 03
-            </button>
-            <button
-            class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
-          >
-          Batch 04
-          </button>
-          <button
-          class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
-        >
-        Batch 05
-        </button>
-        <button
-        class=" border-2 border-primary p-0 text-primary md:px-4 px-2 md:py-1 rounded-lg md:text-sm  md:h-[34px] h-[30px] hover:bg-primary hover:text-white"
-      >
-      Batch 06
-      </button>
-  
-          </div>
-          <div class="mt-6 max-w-[432px] m-auto w-full">
-            <button type="button" id="nextButton"  class="w-full bg-primary text-white py-2 px-4 rounded-md">Next</button>
-            <p class="text-center text-sm mt-4">Already have an account? <a href="#" class="text-primary" onclick="openLoginModal()">Login</a></p>
-          </div>
-         
-        </form>
-      </div>
-    
-      <!-- Step 2: Personal Information -->
-      <div id="personalInfoSection" class="mt-6 hidden">
-        <div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="mb-4 space-y-2">
-              <label for="address" class="block text-sm font-medium">Address</label>
-              <input type="text" id="address" name="address" class="w-full border rounded-lg p-2" placeholder="Enter your address">
-            </div>
-    
-            <div class="mb-4 space-y-2">
-              <label for="city" class="block text-sm font-medium">City</label>
-              <input type="text" id="city" name="city" class="w-full border rounded-lg p-2" placeholder="Enter your city">
-            </div>
-    
-            <div class="mb-4 space-y-2">
-              <label for="state" class="block text-sm font-medium">State</label>
-              <input type="text" id="state" name="state" class="w-full border rounded-lg p-2" placeholder="Enter your state">
-            </div>
-    
-            <div class="mb-4 space-y-2">
-              <label for="zip" class="block text-sm font-medium">ZIP Code</label>
-              <input type="text" id="zip" name="zip" class="w-full border rounded-lg p-2" placeholder="Enter ZIP Code">
-            </div>
-          </div>
-    
-          <div class="mt-6 max-w-[432px] m-auto w-full">
-            <button id="otpButton"  class="w-full bg-primary text-white py-2 px-4 rounded-md" onclick="openOtpModal()">
-              Send OTP
-            </button>
-            <p class="text-center text-sm mt-4">Already have an account? <a href="#" class="text-primary" onclick="openLoginModal()">Login</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    </div>
-   </div>
-
-    </div>
-  </div>
-
-  <!--otp section-->
-
-  <div
-  id="otpmodal"
-  class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50"
->
-  <!-- Modal Content -->
-  <div class="bg-white container p-6 rounded-2xl shadow-lg relative">
-    <!-- Modal Header -->
-    <div class=" absolute top-0 right-0 p-4">
-
-      <button class="text-primary rounded-full w-10 h-10 border border-paragraph" onclick="closeOtpModal()">
-        ✕
-      </button>
-    </div>
-    <!-- Modal Body -->
-    <div class="mt-4 flex md:flex-row flex-col justify-between gap-4 items-center lg:p-6 p-2">
-      <div class=" max-w-[511px] w-full md:block hidden">
-        <img src="assets/images/Group 1171275115.png" alt="Learn" class="w-full h-full object-cover" />
-      </div>
-     <div class="w-full h-full">
-    
-      <div class=" max-w-[432px] h-full m-auto w-full">
-        <h2 class="text-heading text-2xl font-semibold py-2 text-center">OTP Verification</h2>
-        <p class="text-paragraph text-center text-sm pb-4">We Will Send a 4 digit verification code to this
-          number given below.Check This Number once
-          Again</p>
-        <form>
-          <div class="mb-4 space-y-2">
-            <label for="Mobile" class="block text-sm font-medium text-primary" >Mobile</label>
-            <input type="Mobile" placeholder="Mobile" id="Mobile"  name="Mobile" class="w-full border border-paragraph rounded-lg p-2">
-          </div>
-          <button type="button" class="w-full bg-primary text-white py-2 px-4 rounded-md" onclick="openSendOtpModal()">Send OTP</button>
-        </form>
-        <p class="text-center text-sm mt-4">Don't have an account? <a href="#" class="text-primary" onclick="openSignupModal()">Sign Up</a></p>
-        </div>  
-     </div>
-
-      </div>
-    </div>
-   
-  </div>
- 
-    <!--otp send section-->
-
-    <div
-    id="sendotpmodal"
-    class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50"
-  >
-    <!-- Modal Content -->
-    <div class="bg-white container p-6 rounded-2xl shadow-lg relative">
-      <!-- Modal Header -->
-      <div class=" absolute top-0 right-0 p-4">
-  
-        <button class="text-primary rounded-full w-10 h-10 border border-paragraph" onclick="closeSendOtpModal()">
-          ✕
-        </button>
-      </div>
-      <!-- Modal Body -->
-      <div class="mt-4 flex md:flex-row flex-col justify-between gap-4 items-center lg:p-6 p-2">
-        <div class=" max-w-[511px] w-full md:block hidden">
-          <img src="assets/images/Group 1171275115.png" alt="Learn" class="w-full h-full object-cover" />
-        </div>
-       <div class="w-full h-full">
-      
-        <div class=" max-w-[432px] h-full m-auto w-full">
-          <h2 class="text-heading text-2xl font-semibold py-2 text-center">OTP Verification</h2>
-          <p class="text-paragraph text-center text-sm pb-4">We Will Send a 4 digit verification code to this
-            number given below.Check This Number once
-            Again</p>
-            <form id="otpForm" >
-              <!-- OTP Inputs -->
-              <div class="flex justify-center space-x-4 py-4">
-                <input
-                type="text"
-                maxlength="1"
-                class="otp-input w-12 h-12 text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-xl"
-              />
-              <input
-                type="text"
-                maxlength="1"
-                class="otp-input w-12 h-12 text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-xl"
-              />
-              <input
-                type="text"
-                maxlength="1"
-                class="otp-input w-12 h-12 text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-xl"
-              />
-              <input
-                type="text"
-                maxlength="1"
-                class="otp-input w-12 h-12 text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-xl"
-              />
-              </div>
-            <button type="submit" class="w-full bg-primary text-white py-2 px-4 rounded-md">Send OTP</button>
-          </form>
-          <p class="text-center text-sm mt-4">Don't have an account? <a href="#" class="text-primary" onclick="openSignupModal()">Sign Up</a></p>
-          </div>  
-       </div>
-  
-        </div>
-      </div>
-     
-    </div>
-    
 
     <!-- Hero Section -->
     <section
@@ -479,207 +158,206 @@ class="w-full h-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 in
       </div>
     </section>
 
-    <!-- নিজের শেখা নিজেই গুছিয়ে নেয়ার যাত্রা শুরু হোক section -->
+   <!-- নিজের শেখা নিজেই গুছিয়ে নেয়ার যাত্রা শুরু হোক section -->
 
-    <section
-      class="md:py-24 py-10 backgroundimage"
-      style="background-image: url('assets/images/Frame 2608761(2).jpg')"
-    >
-      <div class="container">
-        <div class="max-w-[667.01px] w-full mx-auto text-center">
-          <h2
-            class="text-heading text-center xl:text-4xl md:text-3xl sm:text-xl text-lg font-bold md:!leading-[54px]"
-          >
-            নিজের শেখা নিজেই গুছিয়ে নেয়ার যাত্রা শুরু হোক
-          </h2>
-          <p class="text-paragraph text-center text-sm md:text-base mt-2">
-            প্রতিযোগিতামূলক এই জব-মার্কেটে নিজের ক্যারিয়ারকে নিয়ে যান অনন্য
-            উচ্চতায়।
-          </p>
-        </div>
-        <div class="flex flex-wrap justify-center gap-x-4 gap-y-4 mt-10">
-          <div
-            class="flex justify-center items-center gap-4 p-3 box-shadow rounded-lg bg-white border-2 border-white hover:border-primary w-[415px]"
-          >
-            <img
-              src="assets/images/Group 1000006766(1).svg"
-              alt="Learn"
-              class="w-[74px] h-[74px] object-cover"
-            />
-            <div>
-              <h3 class="text-heading md:text-lg text-base font-semibold">
-                BIOM
-              </h3>
-              <p class="text-paragraph text-sm mt-1">
-                ঘরে বসেই কুরআন, হাদিস ও ইসলামিক জ্ঞান অর্জনের সুযোগ
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex justify-center items-center gap-4 p-3 box-shadow rounded-lg bg-white border-2 border-white hover:border-primary w-[415px]"
-          >
-            <img
-              src="assets/images/Group 1000006766.svg"
-              alt="Learn"
-              class="w-[74px] h-[74px] object-cover"
-            />
-            <div>
-              <h3 class="text-heading md:text-lg text-base font-semibold">
-                মার্কেটিং ট্রেইনার/ট্রেইনারবৃন্দ
-              </h3>
-              <p class="text-paragraph text-sm mt-1">
-                BIOM-এর কোর্স প্রচারে আমাদের সাথে যুক্ত হন।
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex justify-center items-center gap-4 p-3 box-shadow rounded-lg bg-white border-2 border-white hover:border-primary w-[415px]"
-          >
-            <img
-              src="assets/images/Group 1000006766(2).svg"
-              alt="Learn"
-              class="w-[74px] h-[74px] object-cover"
-            />
-            <div>
-              <h3 class="text-heading md:text-lg text-base font-semibold">
-                শিক্ষকবৃন্দ
-              </h3>
-              <p class="text-paragraph text-sm mt-1">
-                শিক্ষার্থীদের আত্মিক ও নৈতিক বিকাশে সহায়তা করা
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex justify-center items-center gap-4 p-3 box-shadow rounded-lg bg-white border-2 border-white hover:border-primary w-[415px]"
-          >
-            <img
-              src="assets/images/Group 1000006766(3).svg"
-              alt="Learn"
-              class="w-[74px] h-[74px] object-cover"
-            />
-            <div>
-              <h3 class="text-heading md:text-lg text-base font-semibold">
-                স্যোশাল মিডিয়ায় আমরা
-              </h3>
-              <p class="text-paragraph text-sm mt-1">
-                সোশ্যাল মিডিয়ার মাধ্যমে ইসলামিক জ্ঞান ও শিক্ষা প্রচার
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex justify-center items-center gap-4 p-3 box-shadow rounded-lg bg-white border-2 border-white hover:border-primary w-[415px]"
-          >
-            <img
-              src="assets/images/Group 1000006766(4).svg"
-              alt="Learn"
-              class="w-[74px] h-[74px] object-cover"
-            />
-            <div>
-              <h3 class="text-heading md:text-lg text-base font-semibold">
-                দাওয়াত ইসলাম
-              </h3>
-              <p class="text-paragraph text-sm mt-1">
-                আপনার সময়মতো ইসলামিক কোর্স করুন এবং সঠিক জ্ঞান অর্জন করুন।
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+   <section
+   class="md:py-24 py-10 backgroundimage"
+   style="background-image: url('assets/images/Frame 2608761(2).jpg')"
+ >
+   <div class="container">
+     <div class="max-w-[667.01px] w-full mx-auto text-center">
+       <h2
+         class="text-heading text-center xl:text-4xl md:text-3xl sm:text-xl text-lg font-bold md:!leading-[54px]"
+       >
+         নিজের শেখা নিজেই গুছিয়ে নেয়ার যাত্রা শুরু হোক
+       </h2>
+       <p class="text-paragraph text-center text-sm md:text-base mt-2">
+         প্রতিযোগিতামূলক এই জব-মার্কেটে নিজের ক্যারিয়ারকে নিয়ে যান অনন্য
+         উচ্চতায়।
+       </p>
+     </div>
+     <div class="flex flex-wrap justify-center gap-x-4 gap-y-4 mt-10">
+       <div
+         class="flex justify-start items-center gap-4 p-3 box-shadow rounded-lg bg-white border-2 border-white hover:border-primary w-[415px]"
+       >
+         <img
+           src="assets/images/Group 1000006766(1).svg"
+           alt="Learn"
+           class="w-[74px] h-[74px] object-cover"
+         />
+         <div>
+           <h3 class="text-heading md:text-lg text-base font-semibold">
+             BIOM
+           </h3>
+           <p class="text-paragraph text-sm mt-1">
+             ঘরে বসেই কুরআন, হাদিস ও ইসলামিক জ্ঞান অর্জনের সুযোগ
+           </p>
+         </div>
+       </div>
+       <div
+         class="flex justify-start items-center gap-4 p-3 box-shadow rounded-lg bg-white border-2 border-white hover:border-primary w-[415px]"
+       >
+         <img
+           src="assets/images/Group 1000006766.svg"
+           alt="Learn"
+           class="w-[74px] h-[74px] object-cover"
+         />
+         <div>
+           <h3 class="text-heading md:text-lg text-base font-semibold">
+             মার্কেটিং ট্রেইনার/ট্রেইনারবৃন্দ
+           </h3>
+           <p class="text-paragraph text-sm mt-1">
+             BIOM-এর কোর্স প্রচারে আমাদের সাথে যুক্ত হন।
+           </p>
+         </div>
+       </div>
+       <div
+         class="flex justify-start items-start gap-4 p-3 box-shadow rounded-lg bg-white border-2 border-white hover:border-primary w-[415px]"
+       >
+         <img
+           src="assets/images/Group 1000006766(2).svg"
+           alt="Learn"
+           class="w-[74px] h-[74px] object-cover"
+         />
+         <div>
+           <h3 class="text-heading md:text-lg text-base font-semibold">
+             শিক্ষকবৃন্দ
+           </h3>
+           <p class="text-paragraph text-sm mt-1">
+             শিক্ষার্থীদের আত্মিক ও নৈতিক বিকাশে সহায়তা করা
+           </p>
+         </div>
+       </div>
+       <div
+         class="flex justify-center items-center gap-4 p-3 box-shadow rounded-lg bg-white border-2 border-white hover:border-primary w-[415px]"
+       >
+         <img
+           src="assets/images/Group 1000006766(3).svg"
+           alt="Learn"
+           class="w-[74px] h-[74px] object-cover"
+         />
+         <div>
+           <h3 class="text-heading md:text-lg text-base font-semibold">
+             স্যোশাল মিডিয়ায় আমরা
+           </h3>
+           <p class="text-paragraph text-sm mt-1">
+             সোশ্যাল মিডিয়ার মাধ্যমে ইসলামিক জ্ঞান ও শিক্ষা প্রচার
+           </p>
+         </div>
+       </div>
+       <div
+         class="flex justify-center items-center gap-4 p-3 box-shadow rounded-lg bg-white border-2 border-white hover:border-primary w-[415px]"
+       >
+         <img
+           src="assets/images/Group 1000006766(4).svg"
+           alt="Learn"
+           class="w-[74px] h-[74px] object-cover"
+         />
+         <div>
+           <h3 class="text-heading md:text-lg text-base font-semibold">
+             দাওয়াত ইসলাম
+           </h3>
+           <p class="text-paragraph text-sm mt-1">
+             আপনার সময়মতো ইসলামিক কোর্স করুন এবং সঠিক জ্ঞান অর্জন করুন।
+           </p>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
 
-    <!-- দেশসেরা কোরআন পড়ার প্লাটফর্ম section -->
+ <!-- দেশসেরা কোরআন পড়ার প্লাটফর্ম section -->
 
-    <section
-      class="md:py-24 py-10 backgroundimage"
-      style="background-image: url('assets/images/Frame 2608762.png')"
-    >
-      <div class="container">
-        <div class="max-w-[560px] w-full mx-auto text-center">
-          <h2
-            class="text-white text-center xl:text-4xl md:text-3xl sm:text-xl text-lg font-bold md:!leading-[54px] md:px-20 px-10"
-          >
-            দেশসেরা কোরআন পড়ার প্লাটফর্ম
-          </h2>
-          <p class="text-white text-center text-sm md:text-base mt-2">
-            প্রতিযোগিতামূলক এই জব-মার্কেটে নিজের ক্যারিয়ারকে নিয়ে যান অনন্য
-            উচ্চতায়।
-          </p>
-        </div>
-        <div
-          class="flex flex-wrap justify-center gap-x-4 gap-y-4 md:m-10 my-10"
-        >
-          <div
-            class="bg-[#071B78] flex justify-start items-center gap-4 p-3 box-shadow rounded-lg w-[415px]"
-          >
-            <img
-              src="assets/images/group-2 (2).svg"
-              alt="Learn"
-              class="w-[74px] h-[74px] object-cover"
-            />
-            <div>
-              <h3 class="text-white md:text-lg text-base font-semibold">
-                সহিহ কোআন শিক্ষা
-              </h3>
-              <p class="text-white text-sm mt-1">
-                কোরআনের সঠিক তিলাওয়াত ও অর্থ বোঝার পদ্ধতি
-              </p>
-            </div>
-          </div>
-          <div
-            class="bg-[#071B78] flex justify-start items-center gap-4 p-3 box-shadow rounded-lg w-[415px]"
-          >
-            <img
-              src="assets/images/group-2 (1).svg"
-              alt="Learn"
-              class="w-[74px] h-[74px] object-cover"
-            />
-            <div>
-              <h3 class="text-white md:text-lg text-base font-semibold">
-                তাজবিদ
-              </h3>
-              <p class="text-white text-sm mt-1">
-                মাখরাজ ও সিফাত সম্পর্কে বিস্তারিত জ্ঞান
-              </p>
-            </div>
-          </div>
-          <div
-            class="bg-[#071B78] flex justify-start items-center gap-4 p-3 box-shadow rounded-lg w-[415px]"
-          >
-            <img
-              src="assets/images/group-2 (3).svg"
-              alt="Learn"
-              class="w-[74px] h-[74px] object-cover"
-            />
-            <div>
-              <h3 class="text-white md:text-lg text-base font-semibold">
-                নাজেরা
-              </h3>
-              <p class="text-white text-sm mt-1">
-                কোরআন দেখে বিশুদ্ধভাবে পড়ার পদ্ধতি
-              </p>
-            </div>
-          </div>
-          <div
-            class="bg-[#071B78] flex justify-start items-center gap-4 p-3 box-shadow rounded-lg w-[415px]"
-          >
-            <img
-              src="assets/images/group-2 (4).svg"
-              alt="Learn"
-              class="w-[74px] h-[74px] object-cover"
-            />
-            <div>
-              <h3 class="text-white md:text-lg text-base font-semibold">
-                হিফজ
-              </h3>
-              <p class="text-white text-sm mt-1">
-                কোরআনের হাফেজ হওয়ার সুযোগ
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+ <section
+   class="md:py-24 py-10 backgroundimage"
+   style="background-image: url('assets/images/Frame 2608762.png')"
+ >
+   <div class="container">
+     <div class="max-w-[560px] w-full mx-auto text-center">
+       <h2
+         class="text-white text-center xl:text-4xl md:text-3xl sm:text-xl text-lg font-bold md:!leading-[54px] md:px-20 px-10"
+       >
+         দেশসেরা কোরআন পড়ার প্লাটফর্ম
+       </h2>
+       <p class="text-white text-center text-sm md:text-base mt-2">
+         প্রতিযোগিতামূলক এই জব-মার্কেটে নিজের ক্যারিয়ারকে নিয়ে যান অনন্য
+         উচ্চতায়।
+       </p>
+     </div>
+     <div
+       class="flex flex-wrap justify-center gap-x-4 gap-y-4 md:m-10 my-10"
+     >
+       <div
+         class="bg-[#071B78] flex justify-start items-center gap-4 p-3 box-shadow rounded-lg w-[415px]"
+       >
+         <img
+           src="assets/images/group-2 (2).svg"
+           alt="Learn"
+           class="w-[74px] h-[74px] object-cover"
+         />
+         <div>
+           <h3 class="text-white md:text-lg text-base font-semibold">
+             সহিহ কোআন শিক্ষা
+           </h3>
+           <p class="text-white text-sm mt-1">
+             কোরআনের সঠিক তিলাওয়াত ও অর্থ বোঝার পদ্ধতি
+           </p>
+         </div>
+       </div>
+       <div
+         class=" bg-[#071B78] flex justify-start items-center gap-4 p-3 box-shadow rounded-lg w-[415px]"
+       >
+         <img
+           src="assets/images/group-2 (1).svg"
+           alt="Learn"
+           class="w-[74px] h-[74px] object-cover"
+         />
+         <div>
+           <h3 class="text-white md:text-lg text-base font-semibold">
+             তাজবিদ
+           </h3>
+           <p class="text-white text-sm mt-1">
+             মাখরাজ ও সিফাত সম্পর্কে বিস্তারিত জ্ঞান
+           </p>
+         </div>
+       </div>
+       <div
+         class="bg-[#071B78] flex justify-start items-center gap-4 p-3 box-shadow rounded-lg w-[415px]"
+       >
+         <img
+           src="assets/images/group-2 (3).svg"
+           alt="Learn"
+           class="w-[74px] h-[74px] object-cover"
+         />
+         <div>
+           <h3 class="text-white md:text-lg text-base font-semibold">
+             নাজেরা
+           </h3>
+           <p class="text-white text-sm mt-1">
+             কোরআন দেখে বিশুদ্ধভাবে পড়ার পদ্ধতি
+           </p>
+         </div>
+       </div>
+       <div
+         class="bg-[#071B78] flex justify-start items-center gap-4 p-3 box-shadow rounded-lg w-[415px]"
+       >
+         <img
+           src="assets/images/group-2 (4).svg"
+           alt="Learn"
+           class="w-[74px] h-[74px] object-cover"
+         />
+         <div>
+           <h3 class="text-white md:text-lg text-base font-semibold">
+             হিফজ
+           </h3>
+           <p class="text-white text-sm mt-1">
+             কোরআনের হাফেজ হওয়ার সুযোগ
+           </p>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
     <!-- Slider banner section -->
 
     <section>
